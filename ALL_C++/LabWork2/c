@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class EvenNumberPrinter {
+public:
+    void printEvenNumbers() {
+        int i = 2;
+        do {
+            cout << i << " ";
+            i += 2;
+        } while (i <= 20);
+        cout << endl;
+    }
+};
+
+int main() {
+    EvenNumberPrinter printer;
+    cout << "Even numbers from 1 to 20: ";
+    printer.printEvenNumbers();
+
+    return 0;
+}

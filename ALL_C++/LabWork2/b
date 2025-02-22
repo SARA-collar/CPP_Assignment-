@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Countdown {
+public:
+    void countDown(int start) {
+        while (start >= 0) {
+            cout << start << " ";
+            start--;
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    Countdown countdown;
+    int num;
+
+    cout << "Enter a starting number: ";
+    cin >> num;
+    cout << "Counting down: ";
+    countdown.countDown(num);
+
+    return 0;
+}
